@@ -11,3 +11,7 @@ Documentation:
 <a href="https://preview.nuget.org/packages/PZone.SDK.XRM.Plugins/">NuGet Package Page</a>
 
 PM> Install-Package PZone.SDK.XRM.Plugins
+
+## Download
+
+<a href="https://github.com/ZooY/PZone.SDK.XRM.Plugins/releases">Latest release</a>
