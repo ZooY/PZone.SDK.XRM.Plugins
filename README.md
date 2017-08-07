@@ -3,7 +3,7 @@ Common assembly for Microsoft Dynamics Plug-ins development.
 
 Documentation:
 <ul>
-<li><a href="https://zooy.github.io/PZone.SDK.XRM.Plugins/v8/"><b>v8</b>: Dynamics CRM 2016 / Dynamics 365</a></li>
+<li><a href="https://zooy.github.io/PZone.SDK.XRM.Plugins/v8/index.html"><b>v8</b>: Dynamics CRM 2016 / Dynamics 365</a></li>
 </ul>
 
 ## Install from NuGet
