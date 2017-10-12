@@ -10,8 +10,8 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Programming Zone")]
 [assembly: AssemblyProduct("PZone SDK XRM")]
-[assembly: AssemblyCopyright("Copyright ©  2017")]
-[assembly: AssemblyTrademark("Copyright © 2017 Programming Zone")]
+[assembly: AssemblyCopyright("Copyright © 2017 Programming Zone")]
+[assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
