@@ -7,7 +7,9 @@
 
 <a href="https://preview.nuget.org/packages/PZone.SDK.XRM.Plugins/">NuGet Package Page</a>
 
-```PM> Install-Package PZone.SDK.XRM.Plugins```
+```
+PM> Install-Package PZone.SDK.XRM.Plugins
+```
 
 ## All My Dynamics CRM Libs
 
