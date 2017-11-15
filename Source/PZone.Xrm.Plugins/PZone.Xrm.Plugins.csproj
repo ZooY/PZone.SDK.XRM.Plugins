@@ -74,8 +74,8 @@
       <HintPath>..\packages\PZone.SDK.Core.1.1.0.0\lib\net40\PZone.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="PZone.SDK.Xrm, Version=8.0.2.0, Culture=neutral, PublicKeyToken=4394d41fdc99a9c8, processorArchitecture=MSIL">
-      <HintPath>..\packages\PZone.SDK.XRM.8.0.2.0\lib\net452\PZone.SDK.Xrm.dll</HintPath>
+    <Reference Include="PZone.SDK.Xrm, Version=8.0.3.0, Culture=neutral, PublicKeyToken=4394d41fdc99a9c8, processorArchitecture=MSIL">
+      <HintPath>..\packages\PZone.SDK.XRM.8.0.3.0\lib\net452\PZone.SDK.Xrm.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
