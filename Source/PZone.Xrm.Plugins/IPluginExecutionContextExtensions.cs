@@ -1,5 +1,4 @@
 ﻿using Microsoft.Xrm.Sdk;
-using PZone.Xrm.Plugins.Exceptions;
 
 
 namespace PZone.Xrm.Plugins
@@ -49,7 +48,7 @@ namespace PZone.Xrm.Plugins
             if (context.InputParameters.Contains("Target") && context.InputParameters["Target"] is Entity)
                 return (Entity)context.InputParameters["Target"];
             const string ERROR_MESSAGE = "Entity is not accessible in a context of {0} {1} event.";
-            throw new PluginConfigurationException(string.Format(ERROR_MESSAGE, ((Stage)context.Stage).GetDisplayName(), context.MessageName));
+            throw new InvalidPluginExecutionException(string.Format(ERROR_MESSAGE, ((Stage)context.Stage).GetDisplayName(), context.MessageName));
         }
 
 
@@ -94,7 +93,7 @@ namespace PZone.Xrm.Plugins
             if (context.InputParameters.Contains("EntityMoniker") && context.InputParameters["EntityMoniker"] is EntityReference)
                 return (EntityReference)context.InputParameters["EntityMoniker"];
             const string ERROR_MESSAGE = "EntityReference is not accessible in a context of {0} {1} event.";
-            throw new PluginConfigurationException(string.Format(ERROR_MESSAGE, ((Stage)context.Stage).GetDisplayName(), context.MessageName));
+            throw new InvalidPluginExecutionException(string.Format(ERROR_MESSAGE, ((Stage)context.Stage).GetDisplayName(), context.MessageName));
         }
 
 
@@ -113,7 +112,7 @@ namespace PZone.Xrm.Plugins
             var entityName = context.PrimaryEntityName;
             var stageName = ((Stage)context.Stage).GetDisplayName();
             var message = $@"Для сущности {entityName} на шаге {stageName} не определен Image с именем ""{DEFAILT_IMAGE_NAME}"".";
-            throw new PluginConfigurationException(message);
+            throw new InvalidPluginExecutionException(message);
         }
 
 
@@ -131,7 +130,7 @@ namespace PZone.Xrm.Plugins
             var entityName = context.PrimaryEntityName;
             var stageName = ((Stage)context.Stage).GetDisplayName();
             var message = $@"Для сущности {entityName} на шаге {stageName} не определен Image с именем ""{DEFAILT_IMAGE_NAME}"".";
-            throw new PluginConfigurationException(message);
+            throw new InvalidPluginExecutionException(message);
         }
     }
 }

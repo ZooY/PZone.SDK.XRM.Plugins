@@ -1,6 +1,5 @@
 ﻿using System;
 using Microsoft.Xrm.Sdk;
-using PZone.Xrm.Plugins.Exceptions;
 
 
 namespace PZone.Xrm.Plugins
@@ -49,15 +48,10 @@ namespace PZone.Xrm.Plugins
                     }
                     catch (Exception ex)
                     {
-                        throw new PluginConfigurationException("System component setting error.\n Please contact support.", ex);
+                        throw new InvalidPluginExecutionException("System component setting error.\n Please contact support.", ex);
                     }
                 }
                 Execute(context);
-            }
-            catch (PluginConfigurationException ex)
-            {
-                TraceException(context, ex);
-                throw;
             }
             catch (InvalidPluginExecutionException ex)
             {

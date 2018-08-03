@@ -3,7 +3,6 @@
   <HelpKINode Title="Configuring method" Url="html/M_PZone_Xrm_Plugins_PluginBase_Configuring.htm" />
   <HelpKINode Title="Context class">
     <HelpKINode Title="Context Class" Url="html/T_PZone_Xrm_Plugins_Context.htm" />
-    <HelpKINode Title="about Context class" Url="html/T_PZone_Xrm_Plugins_Context.htm" />
     <HelpKINode Title="constructor" Url="html/M_PZone_Xrm_Plugins_Context__ctor.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_PZone_Xrm_Plugins_Context.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_PZone_Xrm_Plugins_Context.htm" />
@@ -37,7 +36,6 @@
   <HelpKINode Title="ImpersonatedService property" Url="html/P_PZone_Xrm_Plugins_Context_ImpersonatedService.htm" />
   <HelpKINode Title="IPluginExecutionContextExtensions class">
     <HelpKINode Title="IPluginExecutionContextExtensions Class" Url="html/T_PZone_Xrm_Plugins_IPluginExecutionContextExtensions.htm" />
-    <HelpKINode Title="about IPluginExecutionContextExtensions class" Url="html/T_PZone_Xrm_Plugins_IPluginExecutionContextExtensions.htm" />
     <HelpKINode Title="fields" Url="html/Fields_T_PZone_Xrm_Plugins_IPluginExecutionContextExtensions.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_PZone_Xrm_Plugins_IPluginExecutionContextExtensions.htm" />
   </HelpKINode>
@@ -48,7 +46,6 @@
   <HelpKINode Title="IPluginExecutionContextExtensions.GetDefaultPreEntityImage method" Url="html/M_PZone_Xrm_Plugins_IPluginExecutionContextExtensions_GetDefaultPreEntityImage.htm" />
   <HelpKINode Title="IServiceProviderExtensions class">
     <HelpKINode Title="IServiceProviderExtensions Class" Url="html/T_PZone_Xrm_Plugins_IServiceProviderExtensions.htm" />
-    <HelpKINode Title="about IServiceProviderExtensions class" Url="html/T_PZone_Xrm_Plugins_IServiceProviderExtensions.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_PZone_Xrm_Plugins_IServiceProviderExtensions.htm" />
   </HelpKINode>
   <HelpKINode Title="IServiceProviderExtensions.GetContext method" Url="html/M_PZone_Xrm_Plugins_IServiceProviderExtensions_GetContext.htm" />
@@ -58,7 +55,6 @@
   <HelpKINode Title="Message property" Url="html/P_PZone_Xrm_Plugins_Context_Message.htm" />
   <HelpKINode Title="PluginBase class">
     <HelpKINode Title="PluginBase Class" Url="html/T_PZone_Xrm_Plugins_PluginBase.htm" />
-    <HelpKINode Title="about PluginBase class" Url="html/T_PZone_Xrm_Plugins_PluginBase.htm" />
     <HelpKINode Title="constructor" Url="html/M_PZone_Xrm_Plugins_PluginBase__ctor.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_PZone_Xrm_Plugins_PluginBase.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_PZone_Xrm_Plugins_PluginBase.htm" />
@@ -68,15 +64,6 @@
   <HelpKINode Title="PluginBase.PluginBase constructor" Url="html/M_PZone_Xrm_Plugins_PluginBase__ctor.htm" />
   <HelpKINode Title="PluginBase.TraceException method" Url="html/M_PZone_Xrm_Plugins_PluginBase_TraceException.htm" />
   <HelpKINode Title="PluginBase.UnsecureConfiguration property" Url="html/P_PZone_Xrm_Plugins_PluginBase_UnsecureConfiguration.htm" />
-  <HelpKINode Title="PluginConfigurationException class">
-    <HelpKINode Title="PluginConfigurationException Class" Url="html/T_PZone_Xrm_Plugins_Exceptions_PluginConfigurationException.htm" />
-    <HelpKINode Title="about PluginConfigurationException class" Url="html/T_PZone_Xrm_Plugins_Exceptions_PluginConfigurationException.htm" />
-    <HelpKINode Title="constructor" Url="html/Overload_PZone_Xrm_Plugins_Exceptions_PluginConfigurationException__ctor.htm" />
-    <HelpKINode Title="events" Url="html/Events_T_PZone_Xrm_Plugins_Exceptions_PluginConfigurationException.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_PZone_Xrm_Plugins_Exceptions_PluginConfigurationException.htm" />
-    <HelpKINode Title="properties" Url="html/Properties_T_PZone_Xrm_Plugins_Exceptions_PluginConfigurationException.htm" />
-  </HelpKINode>
-  <HelpKINode Title="PluginConfigurationException.PluginConfigurationException constructor" Url="html/Overload_PZone_Xrm_Plugins_Exceptions_PluginConfigurationException__ctor.htm" />
   <HelpKINode Title="PostImage property" Url="html/P_PZone_Xrm_Plugins_Context_PostImage.htm" />
   <HelpKINode Title="PostOperation enumeration member" Url="html/T_PZone_Xrm_Plugins_Stage.htm" />
   <HelpKINode Title="PreImage property" Url="html/P_PZone_Xrm_Plugins_Context_PreImage.htm" />
@@ -84,8 +71,6 @@
   <HelpKINode Title="PreValidation enumeration member" Url="html/T_PZone_Xrm_Plugins_Stage.htm" />
   <HelpKINode Title="PZone.Xrm.Plugins namespace" Url="html/N_PZone_Xrm_Plugins.htm" />
   <HelpKINode Title="PZone.Xrm.Plugins.Context class" Url="html/T_PZone_Xrm_Plugins_Context.htm" />
-  <HelpKINode Title="PZone.Xrm.Plugins.Exceptions namespace" Url="html/N_PZone_Xrm_Plugins_Exceptions.htm" />
-  <HelpKINode Title="PZone.Xrm.Plugins.Exceptions.PluginConfigurationException class" Url="html/T_PZone_Xrm_Plugins_Exceptions_PluginConfigurationException.htm" />
   <HelpKINode Title="PZone.Xrm.Plugins.IPluginExecutionContextExtensions class" Url="html/T_PZone_Xrm_Plugins_IPluginExecutionContextExtensions.htm" />
   <HelpKINode Title="PZone.Xrm.Plugins.IServiceProviderExtensions class" Url="html/T_PZone_Xrm_Plugins_IServiceProviderExtensions.htm" />
   <HelpKINode Title="PZone.Xrm.Plugins.Message enumeration" Url="html/T_PZone_Xrm_Plugins_Message.htm" />
@@ -101,7 +86,6 @@
   <HelpKINode Title="Stage property" Url="html/P_PZone_Xrm_Plugins_Context_Stage.htm" />
   <HelpKINode Title="StageExtensions class">
     <HelpKINode Title="StageExtensions Class" Url="html/T_PZone_Xrm_Plugins_StageExtensions.htm" />
-    <HelpKINode Title="about StageExtensions class" Url="html/T_PZone_Xrm_Plugins_StageExtensions.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_PZone_Xrm_Plugins_StageExtensions.htm" />
   </HelpKINode>
   <HelpKINode Title="StageExtensions.GetDisplayName method" Url="html/M_PZone_Xrm_Plugins_StageExtensions_GetDisplayName.htm" />
