@@ -1,17 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <HelpTOC>
 
-  <HelpTOCNode Id="10952fe7-5ba2-482f-bc0b-0c361b2d1402" Title="Namespaces" Url="html/R_Project_Documentation.htm">
-    <HelpTOCNode Id="ef083f5f-4c0b-42a3-b043-cc6629d54b3f" Title="PZone.Xrm.Plugins" Url="html/N_PZone_Xrm_Plugins.htm">
-      <HelpTOCNode Id="1c5b6a6e-4881-4d4f-9507-9019d62d0e4d" Title="Context Class" Url="html/T_PZone_Xrm_Plugins_Context.htm">
+  <HelpTOCNode Id="cb77658f-883b-407f-ad27-d17fc4ad3eab" Title="Namespaces" Url="html/R_Project_Documentation.htm">
+    <HelpTOCNode Id="2d60303e-a6ea-4057-a2c4-ded91cd893a4" Title="PZone.Xrm.Plugins" Url="html/N_PZone_Xrm_Plugins.htm">
+      <HelpTOCNode Id="869d9e1a-d40f-4123-8b98-d5fab2a8265e" Title="Context Class" Url="html/T_PZone_Xrm_Plugins_Context.htm">
         <HelpTOCNode Title="Context Constructor " Url="html/M_PZone_Xrm_Plugins_Context__ctor.htm" />
-        <HelpTOCNode Id="8a442353-1325-4c39-b541-0bafcec767a5" Title="Context Properties" Url="html/Properties_T_PZone_Xrm_Plugins_Context.htm">
+        <HelpTOCNode Id="4650ef34-339a-478b-9f2f-126634bce9b3" Title="Context Properties" Url="html/Properties_T_PZone_Xrm_Plugins_Context.htm">
           <HelpTOCNode Title="Entity Property " Url="html/P_PZone_Xrm_Plugins_Context_Entity.htm" />
-          <HelpTOCNode Title="ExtendedEntity Property " Url="html/P_PZone_Xrm_Plugins_Context_ExtendedEntity.htm" />
           <HelpTOCNode Title="ImpersonatedService Property " Url="html/P_PZone_Xrm_Plugins_Context_ImpersonatedService.htm" />
           <HelpTOCNode Title="Message Property " Url="html/P_PZone_Xrm_Plugins_Context_Message.htm" />
-          <HelpTOCNode Title="PostImage Property " Url="html/P_PZone_Xrm_Plugins_Context_PostImage.htm" />
-          <HelpTOCNode Title="PreImage Property " Url="html/P_PZone_Xrm_Plugins_Context_PreImage.htm" />
+          <HelpTOCNode Title="PostEntityImage Property " Url="html/P_PZone_Xrm_Plugins_Context_PostEntityImage.htm" />
+          <HelpTOCNode Title="PreEntityImage Property " Url="html/P_PZone_Xrm_Plugins_Context_PreEntityImage.htm" />
           <HelpTOCNode Title="Service Property " Url="html/P_PZone_Xrm_Plugins_Context_Service.htm" />
           <HelpTOCNode Title="ServiceProvider Property " Url="html/P_PZone_Xrm_Plugins_Context_ServiceProvider.htm" />
           <HelpTOCNode Title="SourceContext Property " Url="html/P_PZone_Xrm_Plugins_Context_SourceContext.htm" />
@@ -20,21 +19,21 @@
         </HelpTOCNode>
         <HelpTOCNode Title="Context Methods" Url="html/Methods_T_PZone_Xrm_Plugins_Context.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="04516b85-69d4-4350-a09a-df78f61d1a92" Title="IPluginExecutionContextExtensions Class" Url="html/T_PZone_Xrm_Plugins_IPluginExecutionContextExtensions.htm">
-        <HelpTOCNode Id="1f3c3082-a084-4037-804e-ef684cf564d3" Title="IPluginExecutionContextExtensions Methods" Url="html/Methods_T_PZone_Xrm_Plugins_IPluginExecutionContextExtensions.htm">
+      <HelpTOCNode Id="487373c2-dc1b-487f-b4aa-9c69c7aa2145" Title="IPluginExecutionContextExtensions Class" Url="html/T_PZone_Xrm_Plugins_IPluginExecutionContextExtensions.htm">
+        <HelpTOCNode Id="a138643d-f414-43df-9b04-78ca3ce364eb" Title="IPluginExecutionContextExtensions Methods" Url="html/Methods_T_PZone_Xrm_Plugins_IPluginExecutionContextExtensions.htm">
           <HelpTOCNode Title="GetContextEntity Method " Url="html/M_PZone_Xrm_Plugins_IPluginExecutionContextExtensions_GetContextEntity.htm" />
           <HelpTOCNode Title="GetContextEntityReference Method " Url="html/M_PZone_Xrm_Plugins_IPluginExecutionContextExtensions_GetContextEntityReference.htm" />
           <HelpTOCNode Title="GetDefaultPostEntityImage Method " Url="html/M_PZone_Xrm_Plugins_IPluginExecutionContextExtensions_GetDefaultPostEntityImage.htm" />
           <HelpTOCNode Title="GetDefaultPreEntityImage Method " Url="html/M_PZone_Xrm_Plugins_IPluginExecutionContextExtensions_GetDefaultPreEntityImage.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="bea6dea6-82f1-4f8c-98c8-5e79f7e75313" Title="IPluginExecutionContextExtensions Fields" Url="html/Fields_T_PZone_Xrm_Plugins_IPluginExecutionContextExtensions.htm">
+        <HelpTOCNode Id="0ce999b2-79e5-43a1-9709-c7cef2d983ef" Title="IPluginExecutionContextExtensions Fields" Url="html/Fields_T_PZone_Xrm_Plugins_IPluginExecutionContextExtensions.htm">
           <HelpTOCNode Title="DefaultImageName Field" Url="html/F_PZone_Xrm_Plugins_IPluginExecutionContextExtensions_DefaultImageName.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="b8dc76c2-5be7-47ee-acab-c1345238a382" Title="IServiceProviderExtensions Class" Url="html/T_PZone_Xrm_Plugins_IServiceProviderExtensions.htm">
-        <HelpTOCNode Id="d4b7c827-51fd-4a42-8dc8-274fe8422b52" Title="IServiceProviderExtensions Methods" Url="html/Methods_T_PZone_Xrm_Plugins_IServiceProviderExtensions.htm">
+      <HelpTOCNode Id="b7a3878a-d572-452c-82f7-e6bda85705d2" Title="IServiceProviderExtensions Class" Url="html/T_PZone_Xrm_Plugins_IServiceProviderExtensions.htm">
+        <HelpTOCNode Id="f4f0733e-1785-4e03-9616-2bddf3f4a0a8" Title="IServiceProviderExtensions Methods" Url="html/Methods_T_PZone_Xrm_Plugins_IServiceProviderExtensions.htm">
           <HelpTOCNode Title="GetContext Method " Url="html/M_PZone_Xrm_Plugins_IServiceProviderExtensions_GetContext.htm" />
-          <HelpTOCNode Id="ccf0ee03-a7a0-4c25-b59f-8d90c8c02be0" Title="GetService Method " Url="html/Overload_PZone_Xrm_Plugins_IServiceProviderExtensions_GetService.htm">
+          <HelpTOCNode Id="f8b0eef9-7398-4920-a733-8874b454b6a1" Title="GetService Method " Url="html/Overload_PZone_Xrm_Plugins_IServiceProviderExtensions_GetService.htm">
             <HelpTOCNode Title="GetService Method (IServiceProvider)" Url="html/M_PZone_Xrm_Plugins_IServiceProviderExtensions_GetService.htm" />
             <HelpTOCNode Title="GetService Method (IServiceProvider, Guid)" Url="html/M_PZone_Xrm_Plugins_IServiceProviderExtensions_GetService_1.htm" />
           </HelpTOCNode>
@@ -42,14 +41,14 @@
         </HelpTOCNode>
       </HelpTOCNode>
       <HelpTOCNode Title="Message Enumeration" Url="html/T_PZone_Xrm_Plugins_Message.htm" />
-      <HelpTOCNode Id="dbddfa3c-51cc-456e-9fe8-0d51690b1dd2" Title="PluginBase Class" Url="html/T_PZone_Xrm_Plugins_PluginBase.htm">
+      <HelpTOCNode Id="2a4f4a6e-f737-4c43-8d0d-ba33dabcbf94" Title="PluginBase Class" Url="html/T_PZone_Xrm_Plugins_PluginBase.htm">
         <HelpTOCNode Title="PluginBase Constructor " Url="html/M_PZone_Xrm_Plugins_PluginBase__ctor.htm" />
-        <HelpTOCNode Id="153978db-644d-42fb-b6ac-6ecf2e02ee5c" Title="PluginBase Properties" Url="html/Properties_T_PZone_Xrm_Plugins_PluginBase.htm">
+        <HelpTOCNode Id="815e83bc-ea06-46ab-a733-66c1298b4d8d" Title="PluginBase Properties" Url="html/Properties_T_PZone_Xrm_Plugins_PluginBase.htm">
           <HelpTOCNode Title="UnsecureConfiguration Property " Url="html/P_PZone_Xrm_Plugins_PluginBase_UnsecureConfiguration.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="53410d51-b244-463b-8565-9705d6008ad1" Title="PluginBase Methods" Url="html/Methods_T_PZone_Xrm_Plugins_PluginBase.htm">
+        <HelpTOCNode Id="a1914e3f-f185-445c-8055-63c247710e33" Title="PluginBase Methods" Url="html/Methods_T_PZone_Xrm_Plugins_PluginBase.htm">
           <HelpTOCNode Title="Configuring Method " Url="html/M_PZone_Xrm_Plugins_PluginBase_Configuring.htm" />
-          <HelpTOCNode Id="2007ce86-060d-4a16-8bdf-7cbd863d53e1" Title="Execute Method " Url="html/Overload_PZone_Xrm_Plugins_PluginBase_Execute.htm">
+          <HelpTOCNode Id="aa74f47e-f82d-4782-84da-4932c8068af5" Title="Execute Method " Url="html/Overload_PZone_Xrm_Plugins_PluginBase_Execute.htm">
             <HelpTOCNode Title="Execute Method (IServiceProvider)" Url="html/M_PZone_Xrm_Plugins_PluginBase_Execute_1.htm" />
             <HelpTOCNode Title="Execute Method (Context)" Url="html/M_PZone_Xrm_Plugins_PluginBase_Execute.htm" />
           </HelpTOCNode>
@@ -57,8 +56,8 @@
         </HelpTOCNode>
       </HelpTOCNode>
       <HelpTOCNode Title="Stage Enumeration" Url="html/T_PZone_Xrm_Plugins_Stage.htm" />
-      <HelpTOCNode Id="1b91c19f-283c-4a0d-b49f-d801fe4b8a71" Title="StageExtensions Class" Url="html/T_PZone_Xrm_Plugins_StageExtensions.htm">
-        <HelpTOCNode Id="55fc4e7b-cf9b-41fe-a4f9-b947766d8ca0" Title="StageExtensions Methods" Url="html/Methods_T_PZone_Xrm_Plugins_StageExtensions.htm">
+      <HelpTOCNode Id="5942296e-3c44-4d74-aa19-cc271d93ea9a" Title="StageExtensions Class" Url="html/T_PZone_Xrm_Plugins_StageExtensions.htm">
+        <HelpTOCNode Id="1c0d0cf3-41e4-4dd8-aa78-b7f5009af8d6" Title="StageExtensions Methods" Url="html/Methods_T_PZone_Xrm_Plugins_StageExtensions.htm">
           <HelpTOCNode Title="GetDisplayName Method " Url="html/M_PZone_Xrm_Plugins_StageExtensions_GetDisplayName.htm" />
         </HelpTOCNode>
       </HelpTOCNode>

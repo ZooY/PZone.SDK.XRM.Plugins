@@ -14,9 +14,8 @@ namespace PZone.Xrm.Plugins
         private readonly Lazy<IOrganizationService> _impersonatedService;
         private readonly Lazy<ITracingService> _tracingService;
         private readonly Lazy<Entity> _prymaryEntity;
-        private readonly Lazy<Entity> _extendedEntity;
-        private readonly Lazy<Entity> _preImage;
-        private readonly Lazy<Entity> _postImage;
+        private readonly Lazy<Entity> _preEntityImage;
+        private readonly Lazy<Entity> _postEntityImage;
         private readonly Lazy<Stage> _stage;
         private readonly Lazy<Message> _message;
 
@@ -33,27 +32,10 @@ namespace PZone.Xrm.Plugins
             _impersonatedService = new Lazy<IOrganizationService>(() => ServiceProvider.GetService(SourceContext.InitiatingUserId));
             _tracingService = new Lazy<ITracingService>(() => ServiceProvider.GetTracingService());
             _prymaryEntity = new Lazy<Entity>(() => SourceContext.GetContextEntity());
-            _preImage = new Lazy<Entity>(() => SourceContext.GetDefaultPreEntityImage());
-            _postImage = new Lazy<Entity>(() => SourceContext.GetDefaultPostEntityImage());
+            _preEntityImage = new Lazy<Entity>(() => SourceContext.GetDefaultPreEntityImage());
+            _postEntityImage = new Lazy<Entity>(() => SourceContext.GetDefaultPostEntityImage());
             _stage = new Lazy<Stage>(() => (Stage)SourceContext.Stage);
             _message = new Lazy<Message>(() => (Message)Enum.Parse(typeof(Message), SourceContext.MessageName));
-            _extendedEntity = new Lazy<Entity>(() =>
-            {
-                Entity entity = null;
-                if (SourceContext.PreEntityImages.ContainsKey("Image"))
-                    entity = PreImage.Clone();
-                if (entity == null)
-                    entity = Entity.Clone();
-                else
-                    entity.Extend(Entity);
-                if (!SourceContext.PostEntityImages.ContainsKey("Image"))
-                    return entity;
-                if (entity == null)
-                    entity = PostImage.Clone();
-                else
-                    entity.Extend(PostImage);
-                return entity;
-            });
         }
 
 
@@ -96,13 +78,13 @@ namespace PZone.Xrm.Plugins
         /// <summary>
         /// Ссылка на снимок сущности до выполенения операции (Pre Image).
         /// </summary>
-        public Entity PreImage => _preImage.Value;
+        public Entity PreEntityImage => _preEntityImage.Value;
 
 
         /// <summary>
         /// Ссылка на снимок сущности после выполенения операции (Post Image).
         /// </summary>
-        public Entity PostImage => _postImage.Value;
+        public Entity PostEntityImage => _postEntityImage.Value;
 
 
         /// <summary>
@@ -115,11 +97,5 @@ namespace PZone.Xrm.Plugins
         /// Событие подключаемого модуля.
         /// </summary>
         public Message Message => _message.Value;
-
-
-        /// <summary>
-        /// Возвращает "расширенную сущность", включающую поля основной сущности, а также поля снимков состояния.
-        /// </summary>
-        public Entity ExtendedEntity => _extendedEntity.Value;
     }
 }

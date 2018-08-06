@@ -39,7 +39,8 @@
     <WarnOnMissingSourceContext>False</WarnOnMissingSourceContext>
     <DocumentationSources>
       <DocumentationSource sourceFile="Source\PZone.Xrm.Plugins\bin\Release\PZone.SDK.Xrm.Plugins.dll" />
-<DocumentationSource sourceFile="Source\PZone.Xrm.Plugins\bin\Release\PZone.SDK.Xrm.Plugins.xml" /></DocumentationSources>
+      <DocumentationSource sourceFile="Source\PZone.Xrm.Plugins\bin\Release\PZone.SDK.Xrm.Plugins.xml" />
+    </DocumentationSources>
     <ComponentConfigurations>
       <ComponentConfig id="Code Block Component" enabled="True" xmlns="">
         <component id="Code Block Component">
