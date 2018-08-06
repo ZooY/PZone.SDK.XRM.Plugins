@@ -13,7 +13,11 @@ PM> Install-Package PZone.SDK.XRM.Plugins
 ```
 
 ## Download
-<a href="https://github.com/ZooY/PZone.SDK.XRM.Plugins/releases">Latest release</a>
+<ul>
+<li><a href="https://github.com/ZooY/PZone.SDK.XRM.Plugins/releases">Latest release</a></li>
+<li><a href="https://github.com/ZooY/PZone.SDK.XRM.Plugins/releases">Source Code</a></li>
+</ul>
+
 
 ## All My Dynamics CRM Libs
 <ul>
