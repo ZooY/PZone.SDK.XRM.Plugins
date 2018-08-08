@@ -76,7 +76,35 @@ namespace PZone.Xrm.Plugins
             context.TracingService.Trace("=== Plug-in Config ===");
             context.TracingService.Trace(UnsecureConfiguration);
             context.TracingService.Trace("=== Context ===");
-            context.TracingService.Trace(context.SourceContext);
+            context.TracingService.Trace(new
+            {
+                context.SourceContext.MessageName,
+                context.SourceContext.Stage,
+                context.SourceContext.PrimaryEntityId,
+                context.SourceContext.PrimaryEntityName,
+                context.SourceContext.SecondaryEntityName,
+                context.SourceContext.UserId,
+                context.SourceContext.InitiatingUserId,
+                context.SourceContext.InputParameters,
+                context.SourceContext.OutputParameters,
+                context.SourceContext.SharedVariables,
+                context.SourceContext.PreEntityImages,
+                context.SourceContext.PostEntityImages,
+                context.SourceContext.BusinessUnitId,
+                context.SourceContext.CorrelationId,
+                context.SourceContext.OperationId,
+                context.SourceContext.RequestId,
+                context.SourceContext.OrganizationId,
+                context.SourceContext.OrganizationName,
+                context.SourceContext.Depth,
+                context.SourceContext.Mode,
+                context.SourceContext.IsExecutingOffline,
+                context.SourceContext.IsInTransaction,
+                context.SourceContext.IsOfflinePlayback,
+                context.SourceContext.IsolationMode,
+                context.SourceContext.OperationCreatedOn,
+                context.SourceContext.OwningExtension
+            });
             context.TracingService.Trace("=== Exception ===");
             var ex = exception;
             while (ex != null)
