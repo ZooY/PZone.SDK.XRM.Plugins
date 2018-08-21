@@ -35,7 +35,9 @@ namespace PZone.Xrm.Plugins
             _preEntityImage = new Lazy<Entity>(() => SourceContext.GetDefaultPreEntityImage());
             _postEntityImage = new Lazy<Entity>(() => SourceContext.GetDefaultPostEntityImage());
             _stage = new Lazy<Stage>(() => (Stage)SourceContext.Stage);
-            _message = new Lazy<Message>(() => (Message)Enum.Parse(typeof(Message), SourceContext.MessageName));
+            _message = new Lazy<Message>(() => SourceContext.MessageName == "SetStateDynamicEntity" 
+                ? Message.SetState 
+                : (Enum.TryParse<Message>(SourceContext.MessageName, out var enumValue) ? enumValue : Message.Unknown));
         }
 
 

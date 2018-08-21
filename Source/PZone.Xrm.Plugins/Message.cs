@@ -6,6 +6,12 @@
     public enum Message
     {
         /// <summary>
+        /// Все остальные события кроме определнных явно в этом перечислении.
+        /// </summary>
+        Unknown,
+
+
+        /// <summary>
         /// Создание записи.
         /// </summary>
         Create,
@@ -32,6 +38,12 @@
         /// <summary>
         /// Получение набора записей.
         /// </summary>
-        RetrieveMultiple
+        RetrieveMultiple,
+
+
+        /// <summary>
+        /// Установка статуса записи.
+        /// </summary>
+        SetState
     }
 }
