@@ -22,6 +22,14 @@
   <HelpKINode Title="DefaultImageName поле" Url="html/F_PZone_Xrm_Plugins_IPluginExecutionContextExtensions_DefaultImageName.htm" />
   <HelpKINode Title="Delete - член перечисления" Url="html/T_PZone_Xrm_Plugins_Message.htm" />
   <HelpKINode Title="Entity свойство" Url="html/P_PZone_Xrm_Plugins_Context_Entity.htm" />
+  <HelpKINode Title="Error метод" Url="html/M_PZone_Xrm_Plugins_PluginBase_Error.htm" />
+  <HelpKINode Title="ErrorPluginResult - класс">
+    <HelpKINode Title="ErrorPluginResult - класс" Url="html/T_PZone_Xrm_Plugins_ErrorPluginResult.htm" />
+    <HelpKINode Title="конструктор" Url="html/M_PZone_Xrm_Plugins_ErrorPluginResult__ctor.htm" />
+    <HelpKINode Title="методы" Url="html/Methods_T_PZone_Xrm_Plugins_ErrorPluginResult.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ErrorPluginResult.ErrorPluginResult конструктор" Url="html/M_PZone_Xrm_Plugins_ErrorPluginResult__ctor.htm" />
+  <HelpKINode Title="ErrorPluginResult.Result метод" Url="html/M_PZone_Xrm_Plugins_ErrorPluginResult_Result.htm" />
   <HelpKINode Title="Execute метод" Url="html/Overload_PZone_Xrm_Plugins_PluginBase_Execute.htm" />
   <HelpKINode Title="GetContext метод" Url="html/M_PZone_Xrm_Plugins_IServiceProviderExtensions_GetContext.htm" />
   <HelpKINode Title="GetContextEntity метод" Url="html/M_PZone_Xrm_Plugins_IPluginExecutionContextExtensions_GetContextEntity.htm" />
@@ -42,6 +50,11 @@
   <HelpKINode Title="IPluginExecutionContextExtensions.GetContextEntityReference метод" Url="html/M_PZone_Xrm_Plugins_IPluginExecutionContextExtensions_GetContextEntityReference.htm" />
   <HelpKINode Title="IPluginExecutionContextExtensions.GetDefaultPostEntityImage метод" Url="html/M_PZone_Xrm_Plugins_IPluginExecutionContextExtensions_GetDefaultPostEntityImage.htm" />
   <HelpKINode Title="IPluginExecutionContextExtensions.GetDefaultPreEntityImage метод" Url="html/M_PZone_Xrm_Plugins_IPluginExecutionContextExtensions_GetDefaultPreEntityImage.htm" />
+  <HelpKINode Title="IPluginResult - интерфейс">
+    <HelpKINode Title="IPluginResult - интерфейс" Url="html/T_PZone_Xrm_Plugins_IPluginResult.htm" />
+    <HelpKINode Title="методы" Url="html/Methods_T_PZone_Xrm_Plugins_IPluginResult.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IPluginResult.Result метод" Url="html/M_PZone_Xrm_Plugins_IPluginResult_Result.htm" />
   <HelpKINode Title="IServiceProviderExtensions - класс">
     <HelpKINode Title="IServiceProviderExtensions - класс" Url="html/T_PZone_Xrm_Plugins_IServiceProviderExtensions.htm" />
     <HelpKINode Title="методы" Url="html/Methods_T_PZone_Xrm_Plugins_IServiceProviderExtensions.htm" />
@@ -49,8 +62,19 @@
   <HelpKINode Title="IServiceProviderExtensions.GetContext метод" Url="html/M_PZone_Xrm_Plugins_IServiceProviderExtensions_GetContext.htm" />
   <HelpKINode Title="IServiceProviderExtensions.GetService метод" Url="html/Overload_PZone_Xrm_Plugins_IServiceProviderExtensions_GetService.htm" />
   <HelpKINode Title="IServiceProviderExtensions.GetTracingService метод" Url="html/M_PZone_Xrm_Plugins_IServiceProviderExtensions_GetTracingService.htm" />
+  <HelpKINode Title="Lose - член перечисления" Url="html/T_PZone_Xrm_Plugins_Message.htm" />
   <HelpKINode Title="Message - перечисление" Url="html/T_PZone_Xrm_Plugins_Message.htm" />
   <HelpKINode Title="Message свойство" Url="html/P_PZone_Xrm_Plugins_Context_Message.htm" />
+  <HelpKINode Title="Ok метод" Url="html/M_PZone_Xrm_Plugins_PluginBase_Ok.htm" />
+  <HelpKINode Title="OkPluginResult - класс">
+    <HelpKINode Title="OkPluginResult - класс" Url="html/T_PZone_Xrm_Plugins_OkPluginResult.htm" />
+    <HelpKINode Title="конструктор" Url="html/M_PZone_Xrm_Plugins_OkPluginResult__ctor.htm" />
+    <HelpKINode Title="методы" Url="html/Methods_T_PZone_Xrm_Plugins_OkPluginResult.htm" />
+    <HelpKINode Title="свойства" Url="html/Properties_T_PZone_Xrm_Plugins_OkPluginResult.htm" />
+  </HelpKINode>
+  <HelpKINode Title="OkPluginResult.OkPluginResult конструктор" Url="html/M_PZone_Xrm_Plugins_OkPluginResult__ctor.htm" />
+  <HelpKINode Title="OkPluginResult.Reason свойство" Url="html/P_PZone_Xrm_Plugins_OkPluginResult_Reason.htm" />
+  <HelpKINode Title="OkPluginResult.Result метод" Url="html/M_PZone_Xrm_Plugins_OkPluginResult_Result.htm" />
   <HelpKINode Title="PluginBase - класс">
     <HelpKINode Title="PluginBase - класс" Url="html/T_PZone_Xrm_Plugins_PluginBase.htm" />
     <HelpKINode Title="конструктор" Url="html/M_PZone_Xrm_Plugins_PluginBase__ctor.htm" />
@@ -58,10 +82,13 @@
     <HelpKINode Title="свойства" Url="html/Properties_T_PZone_Xrm_Plugins_PluginBase.htm" />
   </HelpKINode>
   <HelpKINode Title="PluginBase.Configuring метод" Url="html/M_PZone_Xrm_Plugins_PluginBase_Configuring.htm" />
+  <HelpKINode Title="PluginBase.Error метод" Url="html/M_PZone_Xrm_Plugins_PluginBase_Error.htm" />
   <HelpKINode Title="PluginBase.Execute метод" Url="html/Overload_PZone_Xrm_Plugins_PluginBase_Execute.htm" />
+  <HelpKINode Title="PluginBase.Ok метод" Url="html/M_PZone_Xrm_Plugins_PluginBase_Ok.htm" />
   <HelpKINode Title="PluginBase.PluginBase конструктор" Url="html/M_PZone_Xrm_Plugins_PluginBase__ctor.htm" />
   <HelpKINode Title="PluginBase.TraceException метод" Url="html/M_PZone_Xrm_Plugins_PluginBase_TraceException.htm" />
   <HelpKINode Title="PluginBase.UnsecureConfiguration свойство" Url="html/P_PZone_Xrm_Plugins_PluginBase_UnsecureConfiguration.htm" />
+  <HelpKINode Title="PluginBase.VersionHistory метод" Url="html/M_PZone_Xrm_Plugins_PluginBase_VersionHistory.htm" />
   <HelpKINode Title="PostEntityImage свойство" Url="html/P_PZone_Xrm_Plugins_Context_PostEntityImage.htm" />
   <HelpKINode Title="PostOperation - член перечисления" Url="html/T_PZone_Xrm_Plugins_Stage.htm" />
   <HelpKINode Title="PreEntityImage свойство" Url="html/P_PZone_Xrm_Plugins_Context_PreEntityImage.htm" />
@@ -69,16 +96,26 @@
   <HelpKINode Title="PreValidation - член перечисления" Url="html/T_PZone_Xrm_Plugins_Stage.htm" />
   <HelpKINode Title="PZone.Xrm.Plugins - пространство имён" Url="html/N_PZone_Xrm_Plugins.htm" />
   <HelpKINode Title="PZone.Xrm.Plugins.Context - класс" Url="html/T_PZone_Xrm_Plugins_Context.htm" />
+  <HelpKINode Title="PZone.Xrm.Plugins.ErrorPluginResult - класс" Url="html/T_PZone_Xrm_Plugins_ErrorPluginResult.htm" />
   <HelpKINode Title="PZone.Xrm.Plugins.IPluginExecutionContextExtensions - класс" Url="html/T_PZone_Xrm_Plugins_IPluginExecutionContextExtensions.htm" />
+  <HelpKINode Title="PZone.Xrm.Plugins.IPluginResult - интерфейс" Url="html/T_PZone_Xrm_Plugins_IPluginResult.htm" />
   <HelpKINode Title="PZone.Xrm.Plugins.IServiceProviderExtensions - класс" Url="html/T_PZone_Xrm_Plugins_IServiceProviderExtensions.htm" />
   <HelpKINode Title="PZone.Xrm.Plugins.Message - перечисление" Url="html/T_PZone_Xrm_Plugins_Message.htm" />
+  <HelpKINode Title="PZone.Xrm.Plugins.OkPluginResult - класс" Url="html/T_PZone_Xrm_Plugins_OkPluginResult.htm" />
   <HelpKINode Title="PZone.Xrm.Plugins.PluginBase - класс" Url="html/T_PZone_Xrm_Plugins_PluginBase.htm" />
   <HelpKINode Title="PZone.Xrm.Plugins.Stage - перечисление" Url="html/T_PZone_Xrm_Plugins_Stage.htm" />
   <HelpKINode Title="PZone.Xrm.Plugins.StageExtensions - класс" Url="html/T_PZone_Xrm_Plugins_StageExtensions.htm" />
+  <HelpKINode Title="Reason свойство" Url="html/P_PZone_Xrm_Plugins_OkPluginResult_Reason.htm" />
+  <HelpKINode Title="Result метод">
+    <HelpKINode Title="ErrorPluginResult.Result - метод" Url="html/M_PZone_Xrm_Plugins_ErrorPluginResult_Result.htm" />
+    <HelpKINode Title="IPluginResult.Result - метод" Url="html/M_PZone_Xrm_Plugins_IPluginResult_Result.htm" />
+    <HelpKINode Title="OkPluginResult.Result - метод" Url="html/M_PZone_Xrm_Plugins_OkPluginResult_Result.htm" />
+  </HelpKINode>
   <HelpKINode Title="Retrieve - член перечисления" Url="html/T_PZone_Xrm_Plugins_Message.htm" />
   <HelpKINode Title="RetrieveMultiple - член перечисления" Url="html/T_PZone_Xrm_Plugins_Message.htm" />
   <HelpKINode Title="Service свойство" Url="html/P_PZone_Xrm_Plugins_Context_Service.htm" />
   <HelpKINode Title="ServiceProvider свойство" Url="html/P_PZone_Xrm_Plugins_Context_ServiceProvider.htm" />
+  <HelpKINode Title="SetState - член перечисления" Url="html/T_PZone_Xrm_Plugins_Message.htm" />
   <HelpKINode Title="SourceContext свойство" Url="html/P_PZone_Xrm_Plugins_Context_SourceContext.htm" />
   <HelpKINode Title="Stage - перечисление" Url="html/T_PZone_Xrm_Plugins_Stage.htm" />
   <HelpKINode Title="Stage свойство" Url="html/P_PZone_Xrm_Plugins_Context_Stage.htm" />
@@ -89,6 +126,9 @@
   <HelpKINode Title="StageExtensions.GetDisplayName метод" Url="html/M_PZone_Xrm_Plugins_StageExtensions_GetDisplayName.htm" />
   <HelpKINode Title="TraceException метод" Url="html/M_PZone_Xrm_Plugins_PluginBase_TraceException.htm" />
   <HelpKINode Title="TracingService свойство" Url="html/P_PZone_Xrm_Plugins_Context_TracingService.htm" />
+  <HelpKINode Title="Unknown - член перечисления" Url="html/T_PZone_Xrm_Plugins_Message.htm" />
   <HelpKINode Title="UnsecureConfiguration свойство" Url="html/P_PZone_Xrm_Plugins_PluginBase_UnsecureConfiguration.htm" />
   <HelpKINode Title="Update - член перечисления" Url="html/T_PZone_Xrm_Plugins_Message.htm" />
+  <HelpKINode Title="VersionHistory метод" Url="html/M_PZone_Xrm_Plugins_PluginBase_VersionHistory.htm" />
+  <HelpKINode Title="Win - член перечисления" Url="html/T_PZone_Xrm_Plugins_Message.htm" />
 </HelpKI>

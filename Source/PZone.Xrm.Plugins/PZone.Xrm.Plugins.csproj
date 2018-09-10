@@ -38,17 +38,22 @@
     <AssemblyOriginatorKeyFile>PZone.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ErrorPluginResult.cs" />
+    <Compile Include="OkPluginResult.cs" />
     <Compile Include="PluginBase.cs" />
     <Compile Include="IPluginExecutionContextExtensions.cs" />
     <Compile Include="Context.cs" />
     <Compile Include="IServiceProviderExtensions.cs" />
+    <Compile Include="IPluginResult.cs" />
     <Compile Include="Stage.cs" />
     <Compile Include="StageExtensions.cs" />
     <Compile Include="Message.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="PZone.snk" />
   </ItemGroup>
   <ItemGroup>

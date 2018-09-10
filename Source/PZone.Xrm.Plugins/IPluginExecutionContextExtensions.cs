@@ -92,11 +92,14 @@ namespace PZone.Xrm.Plugins
             // SetStateDynamicEntity message
             if (context.InputParameters.Contains("EntityMoniker") && context.InputParameters["EntityMoniker"] is EntityReference)
                 return (EntityReference)context.InputParameters["EntityMoniker"];
+            // Opportunity Win message
+            if (context.InputParameters.Contains("OpportunityClose") && context.InputParameters["OpportunityClose"] is Entity)
+                return ((Entity)context.InputParameters["OpportunityClose"]).GetAttributeValue<EntityReference>("opportunityid");
+
             const string ERROR_MESSAGE = "EntityReference is not accessible in a context of {0} {1} event.";
             throw new InvalidPluginExecutionException(string.Format(ERROR_MESSAGE, ((Stage)context.Stage).GetDisplayName(), context.MessageName));
         }
-
-
+        
 
         /// <summary>
         /// Получение Pre Image сущности с именем по умолчанию.

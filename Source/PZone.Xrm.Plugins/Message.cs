@@ -44,6 +44,18 @@
         /// <summary>
         /// Установка статуса записи.
         /// </summary>
-        SetState
+        SetState,
+
+
+        /// <summary>
+        /// Выигрыш возможной сделки.
+        /// </summary>
+        Win,
+
+
+        /// <summary>
+        /// Потеря возможной сделки.
+        /// </summary>
+        Lose
     }
 }

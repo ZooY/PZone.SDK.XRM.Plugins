@@ -1,4 +1,8 @@
-﻿using System;
+﻿// ReSharper disable UnusedMember.Global
+
+
+using System;
+using System.Collections.Generic;
 using Microsoft.Xrm.Sdk;
 
 
@@ -51,7 +55,7 @@ namespace PZone.Xrm.Plugins
                         throw new InvalidPluginExecutionException("System component setting error.\n Please contact support.", ex);
                     }
                 }
-                Execute(context);
+                Execute(context).Result();
             }
             catch (InvalidPluginExecutionException ex)
             {
@@ -119,7 +123,7 @@ namespace PZone.Xrm.Plugins
         /// Метод, содержащий основную бизнес-логику.
         /// </summary>
         /// <param name="context">Контекст выполнения подключаемого модуля.</param>
-        public abstract void Execute(Context context);
+        public abstract IPluginResult Execute(Context context);
 
 
         /// <summary>
@@ -131,6 +135,46 @@ namespace PZone.Xrm.Plugins
         /// </remarks>
         public virtual void Configuring(Context context)
         {
+        }
+
+
+        /// <summary>
+        /// История изменения версий плагина.
+        /// </summary>
+        /// <returns>
+        /// Метод возвращает спиок содержащий историю изменения версии плагина. Элемент истории содержит номер, дату и описание версии.
+        /// </returns>
+        public virtual List<Tuple<string, DateTime?, string>> VersionHistory()
+        {
+            return new List<Tuple<string, DateTime?, string>>
+            {
+                new Tuple<string, DateTime?, string>(null,null,"History not defined")
+            };
+        }
+
+
+        /// <summary>
+        /// Плагни завершен.
+        /// </summary>
+        /// <returns>
+        /// Метод завершает работу плагина.
+        /// </returns>
+        protected IPluginResult Ok(string reason = null)
+        {
+            return new OkPluginResult(reason);
+        }
+
+
+        /// <summary>
+        /// Плагин завершен с ошибкой.
+        /// </summary>
+        /// <param name="message">Сообщение об ошибке.</param>
+        /// <returns>
+        /// Метод завершает плагин с ошибкой.
+        /// </returns>
+        protected IPluginResult Error(string message)
+        {
+            return new ErrorPluginResult(message);
         }
     }
 }
