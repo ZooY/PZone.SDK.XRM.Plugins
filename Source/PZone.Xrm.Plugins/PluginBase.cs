@@ -176,5 +176,19 @@ namespace PZone.Xrm.Plugins
         {
             return new ErrorPluginResult(message);
         }
+
+
+        /// <summary>
+        /// Плагин завершен с ошибкой.
+        /// </summary>
+        /// <param name="message">Сообщение об ошибке.</param>
+        /// <param name="exception">Содержимое исключения.</param>
+        /// <returns>
+        /// Метод завершает плагин с ошибкой.
+        /// </returns>
+        protected IPluginResult Error(string message, Exception exception)
+        {
+            return new ErrorPluginResult(message, exception);
+        }
     }
 }

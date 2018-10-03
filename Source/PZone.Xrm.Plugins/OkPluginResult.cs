@@ -8,7 +8,7 @@
         /// <summary>
         /// Причина завершения работы плагина.
         /// </summary>
-        protected string Reason { get; set; }
+        public string Reason { get; }
 
 
         /// <summary>

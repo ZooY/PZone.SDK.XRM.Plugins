@@ -1,4 +1,5 @@
-﻿using Microsoft.Xrm.Sdk;
+﻿using System;
+using Microsoft.Xrm.Sdk;
 
 namespace PZone.Xrm.Plugins
 {
@@ -7,7 +8,16 @@ namespace PZone.Xrm.Plugins
     /// </summary>
     public class ErrorPluginResult : IPluginResult
     {
-        private readonly string _message;
+        /// <summary>
+        /// Сообщение об ошибке.
+        /// </summary>
+        public string Message { get; }
+
+
+        /// <summary>
+        /// Содержимое исключения.
+        /// </summary>
+        public Exception Exception { get; }
 
 
         /// <summary>
@@ -16,14 +26,28 @@ namespace PZone.Xrm.Plugins
         /// <param name="message">Сообщение об ошибке.</param>
         public ErrorPluginResult(string message)
         {
-            _message = message;
+            Message = string.IsNullOrWhiteSpace(message) ? "Ошибка выполнения плагина." : message;
+        }
+
+
+        /// <summary>
+        /// Конструтор класса.
+        /// </summary>
+        /// <param name="message">Сообщение об ошибке.</param>
+        /// <param name="exception">Содержимое исключения.</param>
+        public ErrorPluginResult(string message, Exception exception)
+        {
+            Exception = exception;
+            Message = string.IsNullOrWhiteSpace(message) 
+                ? exception == null ? "Ошибка выполнения плагина." : exception.Message 
+                : message;
         }
 
 
         /// <inheritdoc />
         public void Result()
         {
-            throw new InvalidPluginExecutionException(string.IsNullOrWhiteSpace(_message) ? "Ошибка выполнения плагина." : _message);
+            throw new InvalidPluginExecutionException(Message, Exception);
         }
     }
 }

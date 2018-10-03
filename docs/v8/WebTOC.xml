@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <HelpTOC>
 
-  <HelpTOCNode Id="70bd06f0-315a-43b1-97b6-d0e1a6ba7eeb" Title="Пространства имен" Url="html/R_Project_Documentation.htm">
-    <HelpTOCNode Id="e9f1d2cd-c700-46e9-a326-37fd5049d190" Title="PZone.Xrm.Plugins" Url="html/N_PZone_Xrm_Plugins.htm">
-      <HelpTOCNode Id="221ae1dd-b42e-419b-9a83-7b486c18ff4f" Title="Context - класс" Url="html/T_PZone_Xrm_Plugins_Context.htm">
+  <HelpTOCNode Id="72eb5dee-bce8-4c1d-ac25-df0f4c19ec51" Title="Пространства имен" Url="html/R_Project_Documentation.htm">
+    <HelpTOCNode Id="4bc870e5-58a3-477c-b873-aa2ddb08ef47" Title="PZone.Xrm.Plugins" Url="html/N_PZone_Xrm_Plugins.htm">
+      <HelpTOCNode Id="02fc365b-1e7c-488b-88f7-f1de44c5a3b2" Title="Context - класс" Url="html/T_PZone_Xrm_Plugins_Context.htm">
         <HelpTOCNode Title="Context - конструктор" Url="html/M_PZone_Xrm_Plugins_Context__ctor.htm" />
-        <HelpTOCNode Id="5c52ed49-a53d-4a2f-ae81-e3939ea557ce" Title="Context - свойства" Url="html/Properties_T_PZone_Xrm_Plugins_Context.htm">
+        <HelpTOCNode Id="c1c91168-7e39-47f6-b9c8-511b72242eda" Title="Context - свойства" Url="html/Properties_T_PZone_Xrm_Plugins_Context.htm">
           <HelpTOCNode Title="Entity - свойство" Url="html/P_PZone_Xrm_Plugins_Context_Entity.htm" />
           <HelpTOCNode Title="ImpersonatedService - свойство" Url="html/P_PZone_Xrm_Plugins_Context_ImpersonatedService.htm" />
           <HelpTOCNode Title="Message - свойство" Url="html/P_PZone_Xrm_Plugins_Context_Message.htm" />
@@ -19,32 +19,39 @@
         </HelpTOCNode>
         <HelpTOCNode Title="Context - методы" Url="html/Methods_T_PZone_Xrm_Plugins_Context.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="b8b04d5e-f8b5-496f-aac8-69c86843c8e8" Title="ErrorPluginResult - класс" Url="html/T_PZone_Xrm_Plugins_ErrorPluginResult.htm">
-        <HelpTOCNode Title="ErrorPluginResult - конструктор" Url="html/M_PZone_Xrm_Plugins_ErrorPluginResult__ctor.htm" />
-        <HelpTOCNode Id="11d2bcfc-c7f5-43bd-94f9-937abc1b582d" Title="ErrorPluginResult - методы" Url="html/Methods_T_PZone_Xrm_Plugins_ErrorPluginResult.htm">
+      <HelpTOCNode Id="091b1c26-b679-4f38-9321-9251e38481b9" Title="ErrorPluginResult - класс" Url="html/T_PZone_Xrm_Plugins_ErrorPluginResult.htm">
+        <HelpTOCNode Id="1cca8159-4240-4e6b-bc08-ccffc4bf47a1" Title="ErrorPluginResult - конструктор" Url="html/Overload_PZone_Xrm_Plugins_ErrorPluginResult__ctor.htm">
+          <HelpTOCNode Title="ErrorPluginResult(String) - конструктор" Url="html/M_PZone_Xrm_Plugins_ErrorPluginResult__ctor.htm" />
+          <HelpTOCNode Title="ErrorPluginResult(String, Exception) - конструктор" Url="html/M_PZone_Xrm_Plugins_ErrorPluginResult__ctor_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="d6180090-2506-477d-864b-f968316a3885" Title="ErrorPluginResult - свойства" Url="html/Properties_T_PZone_Xrm_Plugins_ErrorPluginResult.htm">
+          <HelpTOCNode Title="Exception - свойство" Url="html/P_PZone_Xrm_Plugins_ErrorPluginResult_Exception.htm" />
+          <HelpTOCNode Title="Message - свойство" Url="html/P_PZone_Xrm_Plugins_ErrorPluginResult_Message.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="a1bb112a-b9ea-4b93-9aa8-51e19a458ea7" Title="ErrorPluginResult - методы" Url="html/Methods_T_PZone_Xrm_Plugins_ErrorPluginResult.htm">
           <HelpTOCNode Title="Result - метод" Url="html/M_PZone_Xrm_Plugins_ErrorPluginResult_Result.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="e1de82a0-de36-46eb-83d6-cdf30fb9a7cc" Title="IPluginExecutionContextExtensions - класс" Url="html/T_PZone_Xrm_Plugins_IPluginExecutionContextExtensions.htm">
-        <HelpTOCNode Id="534cd366-184f-46f5-8f3a-fd7acc8d6a9e" Title="IPluginExecutionContextExtensions - методы" Url="html/Methods_T_PZone_Xrm_Plugins_IPluginExecutionContextExtensions.htm">
+      <HelpTOCNode Id="80a3187c-60da-472b-abe4-e07096d6eb82" Title="IPluginExecutionContextExtensions - класс" Url="html/T_PZone_Xrm_Plugins_IPluginExecutionContextExtensions.htm">
+        <HelpTOCNode Id="6577eae7-accf-46fa-9c99-a0f8e819d895" Title="IPluginExecutionContextExtensions - методы" Url="html/Methods_T_PZone_Xrm_Plugins_IPluginExecutionContextExtensions.htm">
           <HelpTOCNode Title="GetContextEntity - метод" Url="html/M_PZone_Xrm_Plugins_IPluginExecutionContextExtensions_GetContextEntity.htm" />
           <HelpTOCNode Title="GetContextEntityReference - метод" Url="html/M_PZone_Xrm_Plugins_IPluginExecutionContextExtensions_GetContextEntityReference.htm" />
           <HelpTOCNode Title="GetDefaultPostEntityImage - метод" Url="html/M_PZone_Xrm_Plugins_IPluginExecutionContextExtensions_GetDefaultPostEntityImage.htm" />
           <HelpTOCNode Title="GetDefaultPreEntityImage - метод" Url="html/M_PZone_Xrm_Plugins_IPluginExecutionContextExtensions_GetDefaultPreEntityImage.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="63ee7ee6-862b-44ad-a528-69c1fd517d8d" Title="IPluginExecutionContextExtensions - поля" Url="html/Fields_T_PZone_Xrm_Plugins_IPluginExecutionContextExtensions.htm">
+        <HelpTOCNode Id="d65648a4-3d3d-4f57-a6f9-50e297f27de3" Title="IPluginExecutionContextExtensions - поля" Url="html/Fields_T_PZone_Xrm_Plugins_IPluginExecutionContextExtensions.htm">
           <HelpTOCNode Title="DefaultImageName - поле" Url="html/F_PZone_Xrm_Plugins_IPluginExecutionContextExtensions_DefaultImageName.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="dc3514c3-3af2-419e-afdb-eaeab0122da8" Title="IPluginResult - интерфейс" Url="html/T_PZone_Xrm_Plugins_IPluginResult.htm">
-        <HelpTOCNode Id="69232555-496a-4f27-9e2b-3307bf3ca3cb" Title="IPluginResult - методы" Url="html/Methods_T_PZone_Xrm_Plugins_IPluginResult.htm">
+      <HelpTOCNode Id="dfa99546-1108-4abb-bbf7-c1dad1da5c3a" Title="IPluginResult - интерфейс" Url="html/T_PZone_Xrm_Plugins_IPluginResult.htm">
+        <HelpTOCNode Id="749e6338-6072-41d9-a981-390cf6f2a4af" Title="IPluginResult - методы" Url="html/Methods_T_PZone_Xrm_Plugins_IPluginResult.htm">
           <HelpTOCNode Title="Result - метод" Url="html/M_PZone_Xrm_Plugins_IPluginResult_Result.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="d6fdffcb-908c-4b5d-95a8-eec13f4458d6" Title="IServiceProviderExtensions - класс" Url="html/T_PZone_Xrm_Plugins_IServiceProviderExtensions.htm">
-        <HelpTOCNode Id="8960d8e7-4f96-47af-8d05-37d4900f93e2" Title="IServiceProviderExtensions - методы" Url="html/Methods_T_PZone_Xrm_Plugins_IServiceProviderExtensions.htm">
+      <HelpTOCNode Id="db6a78f4-e5d4-4669-ad83-a52d75c6671b" Title="IServiceProviderExtensions - класс" Url="html/T_PZone_Xrm_Plugins_IServiceProviderExtensions.htm">
+        <HelpTOCNode Id="ddd54e31-2fc3-4394-bc80-f78fd4a9bd9a" Title="IServiceProviderExtensions - методы" Url="html/Methods_T_PZone_Xrm_Plugins_IServiceProviderExtensions.htm">
           <HelpTOCNode Title="GetContext - метод" Url="html/M_PZone_Xrm_Plugins_IServiceProviderExtensions_GetContext.htm" />
-          <HelpTOCNode Id="e34834d8-c050-4996-aa5a-5eea31966eef" Title="GetService - метод" Url="html/Overload_PZone_Xrm_Plugins_IServiceProviderExtensions_GetService.htm">
+          <HelpTOCNode Id="f714364c-4e1f-440a-9a8c-af74caf7bda4" Title="GetService - метод" Url="html/Overload_PZone_Xrm_Plugins_IServiceProviderExtensions_GetService.htm">
             <HelpTOCNode Title="GetService(IServiceProvider) - метод" Url="html/M_PZone_Xrm_Plugins_IServiceProviderExtensions_GetService.htm" />
             <HelpTOCNode Title="GetService(IServiceProvider, Guid) - метод" Url="html/M_PZone_Xrm_Plugins_IServiceProviderExtensions_GetService_1.htm" />
           </HelpTOCNode>
@@ -52,24 +59,27 @@
         </HelpTOCNode>
       </HelpTOCNode>
       <HelpTOCNode Title="Message - перечисление" Url="html/T_PZone_Xrm_Plugins_Message.htm" />
-      <HelpTOCNode Id="9495a2d5-fc34-4e11-adb6-79ac178a1f80" Title="OkPluginResult - класс" Url="html/T_PZone_Xrm_Plugins_OkPluginResult.htm">
+      <HelpTOCNode Id="8ad9c9a0-d712-42d7-9aba-e5641f22c988" Title="OkPluginResult - класс" Url="html/T_PZone_Xrm_Plugins_OkPluginResult.htm">
         <HelpTOCNode Title="OkPluginResult - конструктор" Url="html/M_PZone_Xrm_Plugins_OkPluginResult__ctor.htm" />
-        <HelpTOCNode Id="2ad509eb-90fa-4bd3-af01-5cf35129f94a" Title="OkPluginResult - свойства" Url="html/Properties_T_PZone_Xrm_Plugins_OkPluginResult.htm">
+        <HelpTOCNode Id="6b2d08ba-8d60-4a33-b609-45540d8e796c" Title="OkPluginResult - свойства" Url="html/Properties_T_PZone_Xrm_Plugins_OkPluginResult.htm">
           <HelpTOCNode Title="Reason - свойство" Url="html/P_PZone_Xrm_Plugins_OkPluginResult_Reason.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="a5a01ad5-68bf-488d-a523-69be569d6f43" Title="OkPluginResult - методы" Url="html/Methods_T_PZone_Xrm_Plugins_OkPluginResult.htm">
+        <HelpTOCNode Id="f8edf871-92fa-45d4-a3ec-e3b8757f5c45" Title="OkPluginResult - методы" Url="html/Methods_T_PZone_Xrm_Plugins_OkPluginResult.htm">
           <HelpTOCNode Title="Result - метод" Url="html/M_PZone_Xrm_Plugins_OkPluginResult_Result.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="7ef6a430-fa84-4354-9bb2-0400ff0ef3a7" Title="PluginBase - класс" Url="html/T_PZone_Xrm_Plugins_PluginBase.htm">
+      <HelpTOCNode Id="2ba5c86d-6a36-498e-81c6-2cf1e876d57f" Title="PluginBase - класс" Url="html/T_PZone_Xrm_Plugins_PluginBase.htm">
         <HelpTOCNode Title="PluginBase - конструктор" Url="html/M_PZone_Xrm_Plugins_PluginBase__ctor.htm" />
-        <HelpTOCNode Id="66c0e862-561e-4e42-857d-95cd0940f4f1" Title="PluginBase - свойства" Url="html/Properties_T_PZone_Xrm_Plugins_PluginBase.htm">
+        <HelpTOCNode Id="2cf17617-d221-4087-8e10-8e58a2a6532e" Title="PluginBase - свойства" Url="html/Properties_T_PZone_Xrm_Plugins_PluginBase.htm">
           <HelpTOCNode Title="UnsecureConfiguration - свойство" Url="html/P_PZone_Xrm_Plugins_PluginBase_UnsecureConfiguration.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="c6a3737c-7760-4c9a-a7a9-01772cede9c8" Title="PluginBase - методы" Url="html/Methods_T_PZone_Xrm_Plugins_PluginBase.htm">
+        <HelpTOCNode Id="8875f9a4-6237-48cc-889d-8c8c2e430928" Title="PluginBase - методы" Url="html/Methods_T_PZone_Xrm_Plugins_PluginBase.htm">
           <HelpTOCNode Title="Configuring - метод" Url="html/M_PZone_Xrm_Plugins_PluginBase_Configuring.htm" />
-          <HelpTOCNode Title="Error - метод" Url="html/M_PZone_Xrm_Plugins_PluginBase_Error.htm" />
-          <HelpTOCNode Id="cd9248a8-985c-4f8b-835c-ad8c0d18e06a" Title="Execute - метод" Url="html/Overload_PZone_Xrm_Plugins_PluginBase_Execute.htm">
+          <HelpTOCNode Id="3c1e2e09-f527-449c-bbc0-d9d6ef9c9508" Title="Error - метод" Url="html/Overload_PZone_Xrm_Plugins_PluginBase_Error.htm">
+            <HelpTOCNode Title="Error(String) - метод" Url="html/M_PZone_Xrm_Plugins_PluginBase_Error.htm" />
+            <HelpTOCNode Title="Error(String, Exception) - метод" Url="html/M_PZone_Xrm_Plugins_PluginBase_Error_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="ef9ecbd4-02a8-465e-83bb-fb947082df25" Title="Execute - метод" Url="html/Overload_PZone_Xrm_Plugins_PluginBase_Execute.htm">
             <HelpTOCNode Title="Execute(IServiceProvider) - метод" Url="html/M_PZone_Xrm_Plugins_PluginBase_Execute_1.htm" />
             <HelpTOCNode Title="Execute(Context) - метод" Url="html/M_PZone_Xrm_Plugins_PluginBase_Execute.htm" />
           </HelpTOCNode>
@@ -79,8 +89,8 @@
         </HelpTOCNode>
       </HelpTOCNode>
       <HelpTOCNode Title="Stage - перечисление" Url="html/T_PZone_Xrm_Plugins_Stage.htm" />
-      <HelpTOCNode Id="071620f6-ecea-4892-a6d4-8b22c76f8d9d" Title="StageExtensions - класс" Url="html/T_PZone_Xrm_Plugins_StageExtensions.htm">
-        <HelpTOCNode Id="cbd5d716-0894-41c1-b7d0-85e73b42666d" Title="StageExtensions - методы" Url="html/Methods_T_PZone_Xrm_Plugins_StageExtensions.htm">
+      <HelpTOCNode Id="98d91c52-46fc-45bb-b948-0ca320ee48d5" Title="StageExtensions - класс" Url="html/T_PZone_Xrm_Plugins_StageExtensions.htm">
+        <HelpTOCNode Id="7a7b2bd0-6843-4254-8ce0-59cee35635d0" Title="StageExtensions - методы" Url="html/Methods_T_PZone_Xrm_Plugins_StageExtensions.htm">
           <HelpTOCNode Title="GetDisplayName - метод" Url="html/M_PZone_Xrm_Plugins_StageExtensions_GetDisplayName.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
