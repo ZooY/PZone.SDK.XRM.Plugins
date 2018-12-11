@@ -38,12 +38,15 @@
     <AssemblyOriginatorKeyFile>PZone.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Configuration\PluginStepAttribute.cs" />
+    <Compile Include="Configuration\ImageType.cs" />
+    <Compile Include="Configuration\PluginImage.cs" />
     <Compile Include="ErrorPluginResult.cs" />
+    <Compile Include="Mode.cs" />
     <Compile Include="OkPluginResult.cs" />
     <Compile Include="PluginBase.cs" />
     <Compile Include="IPluginExecutionContextExtensions.cs" />
     <Compile Include="Context.cs" />
-    <Compile Include="IServiceProviderExtensions.cs" />
     <Compile Include="IPluginResult.cs" />
     <Compile Include="Stage.cs" />
     <Compile Include="StageExtensions.cs" />
