@@ -38,7 +38,9 @@
     <AssemblyOriginatorKeyFile>PZone.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ConfigurablePlugin.cs" />
     <Compile Include="ErrorPluginResult.cs" />
+    <Compile Include="IPluginConfig.cs" />
     <Compile Include="OkPluginResult.cs" />
     <Compile Include="PluginBase.cs" />
     <Compile Include="IPluginExecutionContextExtensions.cs" />

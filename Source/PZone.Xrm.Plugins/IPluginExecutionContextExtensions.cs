@@ -1,4 +1,7 @@
-﻿using Microsoft.Xrm.Sdk;
+﻿// ReSharper disable UnusedMember.Global
+
+
+using Microsoft.Xrm.Sdk;
 
 
 namespace PZone.Xrm.Plugins
@@ -12,7 +15,7 @@ namespace PZone.Xrm.Plugins
         /// <summary>
         /// Название снимка состояния по умолчанию.
         /// </summary>
-        public const string DefaultImageName = "Image";
+        public const string DEFAULT_IMAGE_NAME = "Image";
 
 
         /// <summary> 
@@ -26,7 +29,8 @@ namespace PZone.Xrm.Plugins
         /// Метод возвращает сущность из контекста плагина (если событие предусматривает передачу сущности).
         /// </returns>
         /// <remarks>
-        /// Сущность в контекст передается, например, при событиях <see cref="Microsoft.Xrm.Sdk.Messages.CreateRequest"/>, <see cref="Microsoft.Xrm.Sdk.Messages.UpdateRequest"/> и др.
+        /// Сущность в контекст передается, например, при событиях <see cref="Microsoft.Xrm.Sdk.Messages.CreateRequest"/>,
+        /// <see cref="Microsoft.Xrm.Sdk.Messages.UpdateRequest"/> и др.
         /// </remarks>
         /// <example>
         /// <code>
@@ -47,8 +51,9 @@ namespace PZone.Xrm.Plugins
         {
             if (context.InputParameters.Contains("Target") && context.InputParameters["Target"] is Entity)
                 return (Entity)context.InputParameters["Target"];
-            const string ERROR_MESSAGE = "Entity is not accessible in a context of {0} {1} event.";
-            throw new InvalidPluginExecutionException(string.Format(ERROR_MESSAGE, ((Stage)context.Stage).GetDisplayName(), context.MessageName));
+            var stageName = ((Stage)context.Stage).GetDisplayName();
+            var message = $"Entity is not accessible in a context of {stageName} {context.MessageName} event.";
+            throw new InvalidPluginExecutionException(message);
         }
 
 
@@ -96,8 +101,9 @@ namespace PZone.Xrm.Plugins
             if (context.InputParameters.Contains("OpportunityClose") && context.InputParameters["OpportunityClose"] is Entity)
                 return ((Entity)context.InputParameters["OpportunityClose"]).GetAttributeValue<EntityReference>("opportunityid");
 
-            const string ERROR_MESSAGE = "EntityReference is not accessible in a context of {0} {1} event.";
-            throw new InvalidPluginExecutionException(string.Format(ERROR_MESSAGE, ((Stage)context.Stage).GetDisplayName(), context.MessageName));
+            var stageName = ((Stage)context.Stage).GetDisplayName();
+            var message = $"EntityReference is not accessible in a context of {stageName} {context.MessageName} event.";
+            throw new InvalidPluginExecutionException(message);
         }
         
 
@@ -109,13 +115,9 @@ namespace PZone.Xrm.Plugins
         /// <exception cref="System.Exception">В шаге плагина не определен Image с именем по умолчанию.</exception>
         public static Entity GetDefaultPreEntityImage(this IPluginExecutionContext context)
         {
-            const string DEFAILT_IMAGE_NAME = DefaultImageName;
-            if (context.PreEntityImages.ContainsKey(DEFAILT_IMAGE_NAME))
-                return context.PreEntityImages[DEFAILT_IMAGE_NAME];
-            var entityName = context.PrimaryEntityName;
-            var stageName = ((Stage)context.Stage).GetDisplayName();
-            var message = $@"Для сущности {entityName} на шаге {stageName} не определен Image с именем ""{DEFAILT_IMAGE_NAME}"".";
-            throw new InvalidPluginExecutionException(message);
+            if (context.PreEntityImages.ContainsKey(DEFAULT_IMAGE_NAME))
+                return context.PreEntityImages[DEFAULT_IMAGE_NAME];
+            throw ImageNotDefinedException(context);
         }
 
 
@@ -127,13 +129,18 @@ namespace PZone.Xrm.Plugins
         /// <exception cref="System.Exception">В шаге плагина не определен Image с именем по умолчанию.</exception>
         public static Entity GetDefaultPostEntityImage(this IPluginExecutionContext context)
         {
-            const string DEFAILT_IMAGE_NAME = DefaultImageName;
-            if (context.PostEntityImages.ContainsKey(DEFAILT_IMAGE_NAME))
-                return context.PostEntityImages[DEFAILT_IMAGE_NAME];
+            if (context.PostEntityImages.ContainsKey(DEFAULT_IMAGE_NAME))
+                return context.PostEntityImages[DEFAULT_IMAGE_NAME];
+            throw ImageNotDefinedException(context);
+        }
+
+
+        private static InvalidPluginExecutionException ImageNotDefinedException(IPluginExecutionContext context)
+        {
             var entityName = context.PrimaryEntityName;
             var stageName = ((Stage)context.Stage).GetDisplayName();
-            var message = $@"Для сущности {entityName} на шаге {stageName} не определен Image с именем ""{DEFAILT_IMAGE_NAME}"".";
-            throw new InvalidPluginExecutionException(message);
+            var message = $@"For entity {entityName} on stage {stageName} is not defined Image named ""{DEFAULT_IMAGE_NAME}"".";
+            return new InvalidPluginExecutionException(message);
         }
     }
 }

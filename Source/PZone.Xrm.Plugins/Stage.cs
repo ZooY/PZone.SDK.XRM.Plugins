@@ -1,4 +1,8 @@
-﻿using System.ComponentModel;
+﻿// ReSharper disable UnusedMember.Global
+
+
+using System.ComponentModel;
+
 
 namespace PZone.Xrm.Plugins
 {

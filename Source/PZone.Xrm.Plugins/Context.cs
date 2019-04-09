@@ -1,4 +1,7 @@
-﻿using System;
+﻿// ReSharper disable UnusedMember.Global
+
+
+using System;
 using Microsoft.Xrm.Sdk;
 
 
@@ -10,10 +13,12 @@ namespace PZone.Xrm.Plugins
     public class Context
     {
         private readonly Lazy<IPluginExecutionContext> _context;
+        private readonly Lazy<IOrganizationService> _systemService;
         private readonly Lazy<IOrganizationService> _service;
         private readonly Lazy<IOrganizationService> _impersonatedService;
         private readonly Lazy<ITracingService> _tracingService;
-        private readonly Lazy<Entity> _prymaryEntity;
+        private readonly Lazy<Entity> _primaryEntity;
+        private readonly Lazy<Guid> _primaryEntityId;
         private readonly Lazy<Entity> _preEntityImage;
         private readonly Lazy<Entity> _postEntityImage;
         private readonly Lazy<Stage> _stage;
@@ -28,10 +33,12 @@ namespace PZone.Xrm.Plugins
         {
             ServiceProvider = serviceProvider;
             _context = new Lazy<IPluginExecutionContext>(() => (IPluginExecutionContext)ServiceProvider.GetService(typeof(IPluginExecutionContext)));
-            _service = new Lazy<IOrganizationService>(() => ServiceProvider.GetService(SourceContext.UserId));
-            _impersonatedService = new Lazy<IOrganizationService>(() => ServiceProvider.GetService(SourceContext.InitiatingUserId));
+            _systemService = new Lazy<IOrganizationService>(() => ServiceProvider.GetOrganizationService(null));
+            _service = new Lazy<IOrganizationService>(() => ServiceProvider.GetOrganizationService(SourceContext.UserId));
+            _impersonatedService = new Lazy<IOrganizationService>(() => ServiceProvider.GetOrganizationService(SourceContext.InitiatingUserId));
             _tracingService = new Lazy<ITracingService>(() => ServiceProvider.GetTracingService());
-            _prymaryEntity = new Lazy<Entity>(() => SourceContext.GetContextEntity());
+            _primaryEntity = new Lazy<Entity>(() => SourceContext.GetContextEntity());
+            _primaryEntityId = new Lazy<Guid>(()=>SourceContext.PrimaryEntityId);
             _preEntityImage = new Lazy<Entity>(() => SourceContext.GetDefaultPreEntityImage());
             _postEntityImage = new Lazy<Entity>(() => SourceContext.GetDefaultPostEntityImage());
             _stage = new Lazy<Stage>(() => (Stage)SourceContext.Stage);
@@ -45,6 +52,12 @@ namespace PZone.Xrm.Plugins
         /// Провайдер констекста выпролнения.
         /// </summary>
         public IServiceProvider ServiceProvider { get; }
+
+
+        /// <summary>
+        /// Ссылка на экземпляр CRM-сервиса, запусщенного от имени системного пользователя (SYSTEM).
+        /// </summary>
+        public IOrganizationService SystemService => _systemService.Value;
 
 
         /// <summary>
@@ -74,7 +87,13 @@ namespace PZone.Xrm.Plugins
         /// <summary>
         /// Ссылка на основную сущность контекста подключаемого модуля.
         /// </summary>
-        public Entity Entity => _prymaryEntity.Value;
+        public Entity Entity => _primaryEntity.Value;
+
+
+        /// <summary>
+        /// Идентификаор основной сущности контекста подключаемого модуля.
+        /// </summary>
+        public Guid EntityId => _primaryEntityId.Value;
 
 
         /// <summary>

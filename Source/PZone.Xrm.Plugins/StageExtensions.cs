@@ -4,7 +4,7 @@
 namespace PZone.Xrm.Plugins
 {
     /// <summary>
-    /// Расширение функционала перечисления <see cref="Stage"/>.
+    /// Расширение функциональности перечисления <see cref="Stage"/>.
     /// </summary>
     // ReSharper disable once UnusedMember.Global
     // ReSharper disable once CheckNamespace
@@ -19,7 +19,7 @@ namespace PZone.Xrm.Plugins
         /// </returns>
         public static string GetDisplayName(this Stage stage)
         {
-            var memInfo = (typeof(Stage)).GetMember(stage.ToString());
+            var memInfo = typeof(Stage).GetMember(stage.ToString());
             var attributes = memInfo[0].GetCustomAttributes(typeof(DescriptionAttribute), false);
             return ((DescriptionAttribute)attributes[0]).Description;
         }

@@ -1,4 +1,7 @@
-﻿using System;
+﻿// ReSharper disable UnusedMember.Global
+
+
+using System;
 using Microsoft.Xrm.Sdk;
 
 
@@ -35,41 +38,25 @@ namespace PZone.Xrm.Plugins
 
 
         /// <summary>
-        /// Получение экземплпра CRM-сервиса.
-        /// </summary>
-        /// <param name="serviceProvider">Экземпляр класса <see cref="IServiceProvider"/>.</param>
-        /// <returns>
-        /// Метод возвращает ссылку на экземпляр CRM-сервиса, запусщенного от имени пользователя, указанного при регистрации плагина.
-        /// </returns>
-        /// <example>
-        /// <code>
-        /// public void Execute(IServiceProvider serviceProvider)
-        /// {
-        ///     ...
-        ///     var service = serviceProvider.GetService();
-        ///     ...
-        /// }
-        /// </code>
-        /// </example>
-        public static IOrganizationService GetService(this IServiceProvider serviceProvider)
-        {
-            var context = serviceProvider.GetContext();
-            return serviceProvider.GetService(context.UserId);
-        }
-
-
-        /// <summary>
         /// Получение экземпляра CRM-сервиса.
         /// </summary>
         /// <param name="serviceProvider">Экземпляр класса <see cref="IServiceProvider"/>.</param>
         /// <param name="userId">
         /// <para>Идентификатор пользователя, от имени которого будет выполняться сервис.</para>
-        /// <para>Идентификатор можно взять из контекста плагина (см. <see cref="IPluginExecutionContext"/>). Метод <c>InitiatingUserId</c> контекста позволяет получить идентификатор 
-        /// пользователя, инициировавщего запуск плагина, а метод <c>UserId</c> - идентификатор пользователя, указанный в настройках плагина при регистрации (по умолчанию 
-        /// равно <c>InitiatingUserId</c>).</para>
+        /// <para>Идентификатор можно взять из контекста плагина (см. <see cref="IPluginExecutionContext"/>).
+        /// Свойство <see cref="IExecutionContext.InitiatingUserId"/> контекста позволяет получить идентификатор
+        /// пользователя, инициировавщего запуск плагина, а свойство <see cref="IExecutionContext.UserId"/> -
+        /// идентификатор пользователя, указанный в настройках плагина при регистрации.</para>
         /// </param>
+        /// <para>
+        /// Если значение параметра навно <c>null</c> - будет использован системный пользователь (SYSTEM).
+        /// </para>
+        /// <para>
+        /// Если значение параметра навно <see cref="Guid.Empty"/> - будет использован пользователь из
+        /// свойства <see cref="IExecutionContext.UserId"/>.
+        /// </para>
         /// <returns>
-        /// Метод возвращает ссылку на экземпляр CRM-сервиса, запусщенного от имени указанного пользователя.
+        /// Метод возвращает ссылку на экземпляр CRM-сервиса, который будет работать от имени указанного пользователя.
         /// </returns>
         /// <example>
         /// <code>
@@ -82,7 +69,7 @@ namespace PZone.Xrm.Plugins
         /// }
         /// </code>
         /// </example>
-        public static IOrganizationService GetService(this IServiceProvider serviceProvider, Guid userId)
+        public static IOrganizationService GetOrganizationService(this IServiceProvider serviceProvider, Guid? userId)
         {
             var factory = (IOrganizationServiceFactory)serviceProvider.GetService(typeof(IOrganizationServiceFactory));
             return factory.CreateOrganizationService(userId);

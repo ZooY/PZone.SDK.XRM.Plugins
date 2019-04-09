@@ -13,7 +13,13 @@ namespace PZone.Xrm.Plugins
     /// </summary>
     public abstract class PluginBase : IPlugin
     {
-        private bool _firstExecute = true;
+        /// <summary>
+        ///  Флаг первого успешного выполнения метода Execute.
+        /// </summary>
+        /// <remarks>
+        /// При первом выполнении необходимо загрузить настройки плагина.
+        /// </remarks>
+        protected bool FirstExecute = true;
 
 
         /// <summary>
@@ -43,16 +49,17 @@ namespace PZone.Xrm.Plugins
             var context = new Context(serviceProvider);
             try
             {
-                if (_firstExecute)
+                if (FirstExecute)
                 {
                     try
                     {
+                        InternalPreConfiguring(context);
                         Configuring(context);
-                        _firstExecute = false;
+                        FirstExecute = false;
                     }
                     catch (Exception ex)
                     {
-                        throw new InvalidPluginExecutionException("System component setting error.\n Please contact support.", ex);
+                        throw new InvalidPluginExecutionException("System component configuration error. \nPlease contact support.", ex);
                     }
                 }
                 Execute(context).Result();
@@ -65,7 +72,7 @@ namespace PZone.Xrm.Plugins
             catch (Exception ex)
             {
                 TraceException(context, ex);
-                throw new InvalidPluginExecutionException("An unexpected system error.\n Please contact support.", ex);
+                throw new InvalidPluginExecutionException("An unexpected system error. \nPlease contact support.", ex);
             }
         }
 
@@ -126,6 +133,12 @@ namespace PZone.Xrm.Plugins
         public abstract IPluginResult Execute(Context context);
 
 
+        protected virtual void InternalPreConfiguring(Context context)
+        {
+
+        }
+
+
         /// <summary>
         /// Метод конфигурирования подключаемого модуля, выполняющийся один раз при первом выпролнении.
         /// </summary>
@@ -159,7 +172,7 @@ namespace PZone.Xrm.Plugins
         /// <returns>
         /// Метод завершает работу плагина.
         /// </returns>
-        protected IPluginResult Ok(string reason = null)
+        protected virtual IPluginResult Ok(string reason = null)
         {
             return new OkPluginResult(reason);
         }
@@ -172,7 +185,7 @@ namespace PZone.Xrm.Plugins
         /// <returns>
         /// Метод завершает плагин с ошибкой.
         /// </returns>
-        protected IPluginResult Error(string message)
+        protected virtual IPluginResult Error(string message)
         {
             return new ErrorPluginResult(message);
         }
@@ -186,7 +199,7 @@ namespace PZone.Xrm.Plugins
         /// <returns>
         /// Метод завершает плагин с ошибкой.
         /// </returns>
-        protected IPluginResult Error(string message, Exception exception)
+        protected virtual IPluginResult Error(string message, Exception exception)
         {
             return new ErrorPluginResult(message, exception);
         }

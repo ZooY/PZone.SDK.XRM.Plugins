@@ -1,4 +1,7 @@
-﻿namespace PZone.Xrm.Plugins
+﻿// ReSharper disable UnusedMember.Global
+
+
+namespace PZone.Xrm.Plugins
 {
     /// <summary>
     /// Событие подключаемого модуля.
